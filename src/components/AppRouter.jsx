@@ -3,7 +3,7 @@ import Home from '../routes/Home';
 import Auth from '../routes/Auth';
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import NavBar from '../routes/NavBar';
-const AppRouter = () => {
+const AppRouter = ({ isLoggedIn }) => {
     return (
         <div>
 
@@ -14,7 +14,7 @@ const AppRouter = () => {
                         <Home />
                     </Route>
                     <Route path="/Auth" exact>
-                        <Auth />
+                        {isLoggedIn ? "Log In Complete" : <Auth />}
                     </Route>
                 </Switch>
             </BrowserRouter>

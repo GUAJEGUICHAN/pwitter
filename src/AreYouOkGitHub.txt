@@ -1,1 +1,4 @@
 나는 분명히 커밋을 햇는데 못알아 먹는 경우가 있다
+알고보니 default branch가 main으로 되어있었다.
+master을 default branch로 바꾸면 되었다. 
+잘 기억해두자
